@@ -27,19 +27,23 @@ html body {
 
 #vs{
     width:100px;
+    height: 75px;
 }
 
 #win{
     width :200px;
+    height: 150px;
     display: none;
 }
 
 #lose{
     width:200px;
+    height: 150px;
     display: none;
 }
 #tied{
     width:200px;
+    height: 150px;
     display: none;
 }
 
