@@ -1,0 +1,48 @@
+html body {
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 1%;
+}
+
+.arena{
+   display: flex;
+   padding: 2%;
+   justify-content: space-around;
+}
+
+.select{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.intro{
+    justify-content: center;
+    display:flex;
+}
+#play{
+    text-align: center;
+}
+
+#vs{
+    width:100px;
+}
+
+#win{
+    width :200px;
+    display: none;
+}
+
+#lose{
+    width:200px;
+    display: none;
+}
+#tied{
+    width:200px;
+    display: none;
+}
+
+.choices {
+    height: 250px;
+}

@@ -1,7 +1,6 @@
 let userChosen;
 let computerChosen;
 var result = results();
-const displayResult = document.getElementById('result');
 const computerChoice = document.getElementById('computer-choice');
 const userChoice = document.getElementById('user-choice');
 let randomNumber;
@@ -16,7 +15,22 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     results();
     userChoice.innerHTML = userChosen;
     computerChoice.innerHTML = computerChosen;
-    displayResult.innerHTML = result;
+    
+    if(result ==='you lost'){
+        document.getElementById('lose').style.display="inline-flex";
+        document.getElementById('tied').style.display="none";
+        document.getElementById('win').style.display='none';
+    }
+    else if(result === 'There was a tie'){
+        document.getElementById('tied').style.display="inline-flex";
+        document.getElementById('win').style.display='none';
+        document.getElementById('lose').style.display="none";
+    }
+    else if(result === 'you win!'){
+        document.getElementById('win').style.display='inline-flex';
+        document.getElementById('lose').style.display="none";
+        document.getElementById('tied').style.display="none";
+    }
 }));
 
 //get a random computer choice
@@ -39,10 +53,10 @@ function results() {
         return result = "There was a tie";
     }
     else if(computerChosen === 'rock' && userChosen === 'paper'){
-        return result = 'you lost';
+        return result = 'you win!';
     }
     else if(computerChosen === 'rock' && userChosen === 'scissors'){
-        return result = 'you win!';
+        return result='you lost';
     }
     else if(computerChosen === 'paper' && userChosen === 'rock'){
         return result = 'you lost';
@@ -57,3 +71,4 @@ function results() {
         return result = 'you win!';
     }
 }
+
