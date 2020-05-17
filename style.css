@@ -53,6 +53,6 @@ html body {
 
 @media only screen and (max-width: 600px) {
     body {
-      margin-left: 5%;
+      margin-left: 100px;
     }
   }
