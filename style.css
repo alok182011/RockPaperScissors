@@ -55,4 +55,8 @@ html body {
     body {
       margin-left: 100px;
     }
+
+    #vs{
+        height: 150px;
+    }
   }
