@@ -10,7 +10,7 @@ const possibleChoices = document.querySelectorAll('.choices');
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click',(e) => {
     userChosen = e.target.id;
-    randomNumber = Math.round(Math.random()*(3));
+    randomNumber = Math.floor(Math.random()*(4));
     generatedComputerChoice();
     results();
     userChoice.innerHTML = userChosen;

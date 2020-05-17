@@ -50,3 +50,9 @@ html body {
 .choices {
     height: 250px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      margin-left: 5%;
+    }
+  }
